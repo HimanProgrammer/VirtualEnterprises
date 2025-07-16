@@ -6584,6 +6584,108 @@ Responsive Menu Css
     margin-right: 0;
   }
 }
+
+.call-marq .main-marq:after {
+  display: none;
+}
+
+.call-marq .main-marq.sub-bg {
+  -webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  position: relative;
+  z-index: 2;
+}
+
+.call-marq .main-marq.bord-item {
+  -webkit-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+.call-marq .main-marq.bord-item .item {
+  padding: 15px 50px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 60px;
+  margin: 0 10px;
+}
+
+.call-marq .main-marq.bord-item .item h4 {
+  font-size: 50px !important;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: #fff;
+  padding: 15px 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #fff;
+}
+
+.contact textarea {
+  min-height: 180px;
+}
+
+.contact .info-box {
+  padding: 80px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact .info-box:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/map.png);
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.contact .form2 input,
+.contact .form2 textarea {
+  padding: 15px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 30px;
+}
+
+.google-map {
+  height: 450px;
+  width: 100%;
+  position: relative;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.google-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
 /*==========================================================================
 * Contact Two CSS
 ==========================================================================*/
@@ -6653,6 +6755,8 @@ Responsive Menu Css
 .contact__two-single-info:hover {
   transform: translateY(-5px);
 }
+
+
 
 @media (max-width: 1399px) {
   .contact__two-single-info {

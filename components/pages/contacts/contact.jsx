@@ -13,70 +13,134 @@ const ContactUs = () => {
             <HeaderOne />
             <BreadCrumb title="Contact Us" innerTitle="Contact Us" />
             <div className="contact__two section-padding">
-                <div className="container">
-                    <div className="row gy-4 align-items-center">
-                        <div className="col-xl-12">
-                            <div className="contact__two-title">
+               <div className="row ml-80 mr-90">
+                  <div className="col-lg-4 valign">
+                                <div className="sec-head info-box full-width md-mb80">
+                                <div className="phone fz-30 fw-600 underline main-color">
+                                    <a href="#0">+1 840 841 25 69</a>
+                                </div>
+                                <div className="morinfo mt-50 pb-30 bord-thin-bottom">
+                                    <h6 className="mb-15">Address</h6>
+                                    <p>Besòs 1, 08174 Sant Cugat del Vallès, Barcelona</p>
+                                </div>
+                                <div className="morinfo mt-30 pb-30 bord-thin-bottom">
+                                    <h6 className="mb-15">Email</h6>
+                                    <p>Support@UiCamp.com</p>
+                                </div>
+
+                                <div className="social-icon mt-50">
+                                    <a href="#0">
+                                    <i className="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#0">
+                                    <i className="fab fa-dribbble"></i>
+                                    </a>
+                                    <a href="#0">
+                                    <i className="fab fa-behance"></i>
+                                    </a>
+                                    <a href="#0">
+                                    <i className="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                                </div>
+                  </div>
+                  <div className="col-lg-7 offset-lg-1 valign">
+                        <div className="full-width">
+                            <div className="sec-head mb-50">
+                                <h6 className="sub-title main-color mb-15">Let&lsquo;s Chat</h6>
+                                <h3 className="text-u ls1">
+                                Send a <span className="fw-200">message</span>
+                                </h3>
                             </div>
-                            <div className="contact__two-contact-info">
-                                <div className="contact__two-single-info">
-                                    <div className="contact__two-single-info-icon">
-                                        <img src="assets/img/icon//service-1.png" alt="image" />
-                                    </div>
-                                    <div className="contact__two-single-info-content">
-                                        <h4>Email</h4>
-                                        <span>virtualenterprisespune@gmail.com</span>
-                                        <span>info@virtualenterprises.in</span>
-                                    </div>
-                                </div>
-                                <div className="contact__two-single-info">
-                                    <div className="contact__two-single-info-icon">
-                                        <img src="assets/img/icon//service-2.png" alt="image" />
-                                    </div>
-                                    <div className="contact__two-single-info-content">
-                                        <h4>Contacts</h4>
-                                        <span>+91 9881479699 </span>
-                                        <span>+91 8793434399</span>
-                                    </div>
-                                </div>
-                                <div className="contact__two-single-info">
-                                    <div className="contact__two-single-info-icon">
-                                        <img src="assets/img/icon//service-3.png" alt="image" />
-                                    </div>
-                                    <div className="contact__two-single-info-content">
-                                        <h4>Date</h4>
-                                        <span>Monday to Saturday <br/> 10.Am To 2.Pm</span>
+                            <form
+                                id="contact-form"
+                                className="form2"
+                                method="post"
+                                action="contact.php"
+                            >
+                                <div className="messages"></div>
+
+                                <div className="controls row">
+                                <div className="col-lg-6">
+                                    <div className="form-group mb-30">
+                                    <input
+                                        id="form_name"
+                                        type="text"
+                                        name="name"
+                                        placeholder="Name"
+                                        required="required"
+                                    />
                                     </div>
                                 </div>
-                                <div className="contact__two-single-info">
-                                    <div className="contact__two-single-info-icon">
-                                        <img src="assets/img/icon/service-4.png" alt="image" />
+
+                                <div className="col-lg-6">
+                                    <div className="form-group mb-30">
+                                    <input
+                                        id="form_email"
+                                        type="email"
+                                        name="email"
+                                        placeholder="Email"
+                                        required="required"
+                                    />
                                     </div>
-                                    <div className="contact__two-single-info-content">
-                                        <h4>Location</h4>
-                                        <span>Audumbar Soc. CTS. 345 Ganesh Peth, 1st Floor,<br/> Near New Milk Dairy, Pune, Maharashtra,</span>
-                                    </div>    
                                 </div>
-                            </div>
-                        </div>
+
+                                <div className="col-12">
+                                    <div className="form-group mb-30">
+                                    <input
+                                        id="form_subject"
+                                        type="text"
+                                        name="subject"
+                                        placeholder="Subject"
+                                    />
+                                    </div>
+                                </div>
+
+                                <div className="col-12">
+                                    <div className="form-group mb-30">
+                                        <div className="col-12">
+                                        <select
+                                        id="form_service"
+                                        name="service"
+                                        className="form-control"
+                                        required="required">
+                                        <option value="">Select a Service</option>
+                                        <option value="graphic_design">CNC Machine Hard Disk Solutions</option>
+                                        <option value="web_design">Industrial Computing Solutions</option>
+                                        <option value="app_development">Surveillance & Camera Systems</option>
+                                        <option value="smm">Industrial Electronics Repair Services</option>
+                                        <option value="branding">Industry 4.0 & Automation Solutions</option>
+                                        </select>
+                                        </div>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+
+                                <div className="col-12">
+                                    <div className="form-group">
+                                    <textarea
+                                        id="form_message"
+                                        name="message"
+                                        placeholder="Message"
+                                        rows="4"
+                                        required="required"
+                                    ></textarea>
+                                    </div>
+                                    <div className="mt-30">
+                                    <button
+                                        type="submit"
+                                        className="butn butn-full butn-bord radius-30"
+                                    >
+                                        <span className="text">Let&lsquo;s Talk</span>
+                                    </button>
+                                    </div>
+                                </div>
+                            </form>
                     </div>
                 </div>
-                <div className="container">
-                    <div className="row gy-4 align-items-center">         
-                        <div className="col-xl-12 mb-10">
-                            <div className="contact__two-content ">
-                                    <div className="contact__two-title">
-                                    <h2>Do you have any question? </h2>
-                                    <p>For your car we will do everything  advice, repairs and maintenance. We are the some preferred choice by many car owners because</p>
-                                </div>
-                                <div className="contact__two-form W-100">
-                                    <FormArea />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+               </div>  
+             </div>  
             <FooterOne />
             <ScrollToTop />
         </>
