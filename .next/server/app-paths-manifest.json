@@ -17,11 +17,11 @@
   "/pricing-plan/page": "app/pricing-plan/page.js",
   "/request-quote/page": "app/request-quote/page.js",
   "/services-two/page": "app/services-two/page.js",
-  "/services/page": "app/services/page.js",
   "/team-two/page": "app/team-two/page.js",
+  "/services/page": "app/services/page.js",
   "/team/page": "app/team/page.js",
   "/testimonial/page": "app/testimonial/page.js",
+  "/services/[id]/page": "app/services/[id]/page.js",
   "/blog/[id]/page": "app/blog/[id]/page.js",
-  "/portfolio/[id]/page": "app/portfolio/[id]/page.js",
-  "/services/[id]/page": "app/services/[id]/page.js"
+  "/portfolio/[id]/page": "app/portfolio/[id]/page.js"
 }
