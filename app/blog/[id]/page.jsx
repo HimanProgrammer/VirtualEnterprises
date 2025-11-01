@@ -1,20 +1,24 @@
-"use client"
-import { useParams, useRouter } from "next/navigation";
-import blogData from '@/components/data/blog-data';
-import BlogDetails from '@/components/pages/blogs/blog-details';
+// app/blog/[id]/page.js
 
-const BlogDetail = () => {
-    const params = useParams();
-    const singleData = blogData?.find((blog) => blog.id === params.id);
-    const router = useRouter();
-    if (!singleData) {
-        return router.push("/404-error");
-    }
-    return (
-        <>
-            <BlogDetails singleData={singleData} />
-        </>
-    );
-};
+export async function generateStaticParams() {
+  const posts = [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' }
+  ];
 
-export default BlogDetail;
+  return posts.map((post) => ({
+    id: post.id,
+  }));
+}
+
+export default function BlogPost({ params }) {
+  const { id } = params;
+
+  return (
+    <div>
+      <h1>Blog Post #{id}</h1>
+      <p>This is the content for blog post {id}.</p>
+    </div>
+  );
+}

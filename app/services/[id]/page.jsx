@@ -1,20 +1,29 @@
-"use client"
-import { useParams, useRouter } from "next/navigation";
-import ServicesSingle from '@/components/pages/services/service-single';
-import servicesData from '@/components/data/services-data';
+// app/services/[id]/page.js
 
-const ServicesDetail = () => {
-    const params = useParams();
-    const serviceDetails = servicesData?.find((service) => service.id === params.id);
-    const router = useRouter();
-    if (!serviceDetails) {
-        return router.push("/404-error");
-    }
-    return (
-        <>
-            <ServicesSingle serviceDetails={serviceDetails} />
-        </>
-    );
-};
+// Tell Next.js which service pages to pre-render
+export async function generateStaticParams() {
+  const services = [
+    { id: 'web-development' },
+    { id: 'app-development' },
+    { id: 'ui-ux-design' },
+    { id: 'digital-marketing' },
+  ];
 
-export default ServicesDetail;
+  return services.map((service) => ({
+    id: service.id,
+  }));
+}
+
+// Actual page component
+export default function ServicePage({ params }) {
+  const { id } = params;
+
+  return (
+    <main style={{ padding: '2rem' }}>
+      <h1>Service: {id.replace('-', ' ')}</h1>
+      <p>
+        This page contains details about our {id.replace('-', ' ')} service.
+      </p>
+    </main>
+  );
+}
