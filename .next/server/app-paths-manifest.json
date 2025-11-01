@@ -4,8 +4,8 @@
   "/blog-standard/page": "app/blog-standard/page.js",
   "/blog/page": "app/blog/page.js",
   "/contact/page": "app/contact/page.js",
-  "/faq/page": "app/faq/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/faq/page": "app/faq/page.js",
   "/home-five/page": "app/home-five/page.js",
   "/home-four/page": "app/home-four/page.js",
   "/home-three/page": "app/home-three/page.js",
@@ -17,11 +17,11 @@
   "/pricing-plan/page": "app/pricing-plan/page.js",
   "/request-quote/page": "app/request-quote/page.js",
   "/services-two/page": "app/services-two/page.js",
-  "/team-two/page": "app/team-two/page.js",
   "/services/page": "app/services/page.js",
+  "/team-two/page": "app/team-two/page.js",
   "/team/page": "app/team/page.js",
   "/testimonial/page": "app/testimonial/page.js",
-  "/services/[id]/page": "app/services/[id]/page.js",
   "/blog/[id]/page": "app/blog/[id]/page.js",
+  "/services/[id]/page": "app/services/[id]/page.js",
   "/portfolio/[id]/page": "app/portfolio/[id]/page.js"
 }

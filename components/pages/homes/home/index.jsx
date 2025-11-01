@@ -16,12 +16,13 @@ import Testimonial from "./testimonial";
 const HomeOne = () => {
     return (
         <div>
-            <SEO pageTitle='Technology' />
+            <SEO pageTitle='Virtual' />
             <HeaderOne />
             <BannerOne />
             <About />
             <ChooseUs />
             <Services/>
+            <Portfolio />
             <Testimonial />
             <Blog />
             <FooterOne />
