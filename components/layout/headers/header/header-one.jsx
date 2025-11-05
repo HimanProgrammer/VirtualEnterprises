@@ -29,13 +29,13 @@ const HeaderOne = ({variant}) => {
                 <div className="row">
                     <div className="col-xl-7 col-md-7">
                         <div className="top__bar-left">
-                            <Link href="tel:(629)555-0129"><i className="fas fa-phone-alt"></i>(629) 555-0129</Link>
-                            <Link href="mailto:info@example.com"><i className="fas fa-envelope"></i>info@example.com</Link>
+                            <Link href="tel:(629)555-0129"><i className="fas fa-phone"></i>9881479699</Link>
+                            <Link href="mailto:info@example.com"><i className="fas fa-envelope"></i>info@virtualenterprises.in</Link>
                         </div>
                     </div>
                     <div className="col-xl-5 col-md-5">
                         <div className="top__bar-right">
-                            <Link href="https://www.google.com/maps"><i className="fas fa-map-marker-alt"></i>6391 Elgin St. Celina, 10299</Link>
+                            <Link href="https://www.google.com/maps"><i className="fas fa-map-marker-alt"></i>345 Ganesh Peth, 1st Floor , Pune</Link>
                         </div>
                     </div>
                 </div>

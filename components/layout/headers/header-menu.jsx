@@ -10,7 +10,7 @@ const MainMenu = () => {
                 </li>
                 <li className="menu-item-has-children"><Link href="/services">Services </Link>
                 </li>
-                <li className="menu-item-has-children"><Link href="#">Gallery</Link>
+                <li className="menu-item-has-children"><Link href="/portfolio/3-columns">Gallery</Link>
                 </li>
                 <li className="menu-item-has-children"><Link href="blog">Blog </Link>
                 </li>

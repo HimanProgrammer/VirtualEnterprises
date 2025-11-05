@@ -17,28 +17,28 @@ const ContactUs = () => {
                   <div className="col-lg-4 valign">
                                 <div className="sec-head info-box full-width md-mb80">
                                 <div className="phone fz-30 fw-600 underline main-color">
-                                    <a href="#0">+1 840 841 25 69</a>
+                                    <a href="#0"> +91 9881479699</a>
                                 </div>
                                 <div className="morinfo mt-50 pb-30 bord-thin-bottom">
                                     <h6 className="mb-15">Address</h6>
-                                    <p>Besòs 1, 08174 Sant Cugat del Vallès, Barcelona</p>
+                                    <p>Audumbar Soc. CTS. 345 Ganesh Peth, 1st Floor,Near New Milk Dairy, Pune, Maharashtra,</p>
                                 </div>
                                 <div className="morinfo mt-30 pb-30 bord-thin-bottom">
                                     <h6 className="mb-15">Email</h6>
-                                    <p>Support@UiCamp.com</p>
+                                    <p>virtualwebsite2025@gmail.com</p>
                                 </div>
 
-                                <div className="social-icon mt-50">
-                                    <a href="#0">
+                                <div className="social-icon mt-5 ">
+                                    <a href="#0" className="mr-5" >
                                     <i className="fab fa-facebook-f"></i>
                                     </a>
-                                    <a href="#0">
+                                    <a href="#0" className="mr-5">
                                     <i className="fab fa-dribbble"></i>
                                     </a>
-                                    <a href="#0">
+                                    <a href="#0" className="mr-5">
                                     <i className="fab fa-behance"></i>
                                     </a>
-                                    <a href="#0">
+                                    <a href="#0" className="mr-5">
                                     <i className="fab fa-instagram"></i>
                                     </a>
                                 </div>
@@ -52,11 +52,14 @@ const ContactUs = () => {
                                 Send a <span className="fw-200">message</span>
                                 </h3>
                             </div>
+                    <form action="https://formsubmit.co/virtualwebsite2025@gmail.com" method="POST" />
+                    <form action="https://formsubmit.co/info@virtualenterprises.in" method="POST" />
+
                             <form
                                 id="contact-form"
                                 className="form2"
                                 method="post"
-                                action="contact.php"
+                                action="#"
                             >
                                 <div className="messages"></div>
 

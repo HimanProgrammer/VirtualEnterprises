@@ -9,7 +9,7 @@ const Blog = () => {
                     <div className="col-xl-6 col-lg-6">
                         <div className="blog__one-title">
                             <span className="subtitle-one">Blog And news</span>
-                            <h2>Exploring Technology</h2>
+                            <h2 className= "text-light">Exploring Technology</h2>
                         </div>
                     </div>
                 </div>
