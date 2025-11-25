@@ -1,4 +1,4 @@
-// File: C:\Users\Administrator\Documents\Github\VirtualEnterprises\app\page.jsx
+// File: G:\Next js\Virtual GitHub\VirtualEnterprises\app\page.jsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
