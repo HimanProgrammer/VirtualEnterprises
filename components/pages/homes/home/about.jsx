@@ -83,7 +83,7 @@ const About = () => {
                             <span className="subtitle-one">About us</span>
                             <h2>Transform Your Business with Advanced IT Solutions  </h2>
                             <p>We help businesses harness the power of technology to drive growth and efficiency. Our IT solutions cover everything from software development to automation and system integration — empowering industries to stay competitive in the digital age.</p>
-                            
+
                             <Link href="/about" className="btn-one">Discover More<i className="fas fa-arrow-right"></i></Link>
                         </div>
                     </div>

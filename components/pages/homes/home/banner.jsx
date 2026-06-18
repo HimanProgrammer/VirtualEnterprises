@@ -5,7 +5,7 @@ import Link from "next/link";
 const BannerOne = () => {
     return (
             <>
-            <div className="banner__one"> 
+            <div className="banner__one">
                 <div className="banner-shape">
                     <div className="shape banner-shape-1"></div>
                     <div className="shape banner-shape-2"></div>

@@ -1,0 +1,15 @@
+# Hostinger Git deploy serves the repo root as public_html.
+# The built static site lives in /out, so rewrite all requests into it.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Homepage -> out/index.html
+  RewriteRule ^$ out/index.html [L]
+
+  # Everything else -> out/<path> (only if not already pointing into /out)
+  RewriteCond %{REQUEST_URI} !^/out/
+  RewriteRule ^(.*)$ out/$1 [L]
+</IfModule>
+
+DirectoryIndex index.html

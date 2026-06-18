@@ -48,7 +48,7 @@ const ChooseUs = () => {
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
         </>
     );
 };
