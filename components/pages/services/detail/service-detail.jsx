@@ -16,7 +16,7 @@ const ServiceDetail = ({ data }) => {
             <div className="col-xl-12">
 
               <div className="service__details-thumb">
-                <img src={serviceDetailsImg.src} alt={data.title} />
+                <img src={data.heroImage || serviceDetailsImg.src} alt={data.title} />
                 <div className="service__details-thumb-icon">
                   <div className="service__details-thumb-icon-wrapper">
                     <img src={icon1.src} alt="icon" />

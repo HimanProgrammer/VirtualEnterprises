@@ -138,6 +138,7 @@ const serviceDetails = {
   'industry-4-automation-solutions': {
     title: 'Industry 4.0 & Automation Solutions',
     breadcrumb: 'Industry 4.0 & Automation',
+    heroImage: '/assets/img/service/industry-4-automation.jpg',
     intro: [
       'Industry 4.0 is transforming manufacturing — connecting machines, data, and people to create smarter, more efficient, and more responsive factories. Virtual Enterprises, together with our specialist partner network, helps you take that step: from PLC-driven automation to full ERP integration and IT-led process automation.',
       'We bridge the gap between your shop floor and your business systems, turning raw machine data into actionable insight and automating the manual processes that slow you down.',
