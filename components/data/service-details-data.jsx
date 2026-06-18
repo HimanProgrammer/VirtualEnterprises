@@ -6,6 +6,7 @@ const serviceDetails = {
   'industrial-computing-solutions': {
     title: 'Industrial Computing Solutions',
     breadcrumb: 'Industrial Computing',
+    heroImage: '/assets/img/service/industrial-computing.jpg',
     intro: [
       'Industrial environments demand computing hardware that can withstand dust, vibration, temperature extremes, and 24/7 operation — conditions that quickly destroy ordinary office equipment. At Virtual Enterprises, we supply rugged, reliable computing systems engineered specifically for the factory floor, control rooms, and commercial deployments.',
       'From fanless industrial PCs to branded desktops and compact mini PCs, we help you select, source, and deploy the right computing platform for your operation — backed by genuine warranties and ongoing support.',
@@ -50,6 +51,7 @@ const serviceDetails = {
   'surveillance-camera-systems': {
     title: 'Surveillance & Camera Systems',
     breadcrumb: 'Surveillance Systems',
+    heroImage: '/assets/img/service/surveillance-camera.jpg',
     intro: [
       'Protecting your premises, assets, and people requires a surveillance system that is reliable, high-resolution, and tailored to your specific site. Virtual Enterprises delivers complete, end-to-end camera installation — from site survey and design to cabling, configuration, and ongoing maintenance.',
       'We work across all major camera technologies — Analog, HD, IP, and CCD-based systems — so we can recommend the right solution for your budget, coverage needs, and existing infrastructure.',
@@ -94,6 +96,7 @@ const serviceDetails = {
   'industrial-electronics-repair': {
     title: 'Industrial Electronics Repair Services',
     breadcrumb: 'Electronics Repair',
+    heroImage: '/assets/img/service/electronics-repair.jpg',
     intro: [
       'When an industrial drive, control card, or HMI fails, replacement units are often expensive, obsolete, or carry long lead times — leaving your machine idle and your production losing money by the hour. Virtual Enterprises offers expert component-level repair of industrial electronics, restoring your equipment to full working order at a fraction of replacement cost.',
       'Our technicians have deep experience across drives, servo systems, control electronics, and operator interfaces from all major manufacturers — diagnosing faults down to the component level.',
@@ -183,6 +186,7 @@ const serviceDetails = {
   'partnered-system-integration': {
     title: 'Partnered System Integration Services',
     breadcrumb: 'System Integration',
+    heroImage: '/assets/img/service/system-integration.jpg',
     intro: [
       'Complex industrial projects often require expertise across multiple disciplines — automation, IT, mechanical handling, and software. Through our trusted partner companies, Virtual Enterprises delivers complete system integration: a single point of accountability for projects that span many specialities.',
       'We coordinate the technologies, vendors, and disciplines so you don\'t have to — delivering integrated solutions that work as one cohesive system from day one.',

@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link';
-import serviceDetailsImg from '../../../../public/assets/img/service/service-details.png';
+import serviceDetailsImg from '../../../../public/assets/img/service/cnc-hard-disk.jpg';
 import icon1 from '../../../../public/assets/img/icon/service-details-icon-2.png';
 import icon2 from '../../../../public/assets/img/icon/service-details-icon.png';
 
