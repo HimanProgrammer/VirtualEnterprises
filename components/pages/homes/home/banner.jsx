@@ -1,8 +1,13 @@
+"use client";
+import { useState, useEffect } from "react";
 import banner1 from "../../../../public/assets/img/banner/banner-right-img.jpg";
 import bannerShape from "../../../../public/assets/img/shape/banner-shape.png";
 import Link from "next/link";
+import { getSection, defaults } from "../../../../lib/cms";
 
 const BannerOne = () => {
+    const [d, setD] = useState(defaults.banner);
+    useEffect(() => { getSection("banner").then(v => { if (v) setD({ ...defaults.banner, ...v }); }); }, []);
     return (
             <>
             <div className="banner__one">
@@ -19,10 +24,10 @@ const BannerOne = () => {
                     <div className="row align-items-center gy-4 justify-content-center">
                         <div className="col-xl-6 col-lg-6">
                             <div className="banner__one-content">
-                                <span className="subtitle-one">Digital Growth</span>
-                                <h2>Reliable Industrial Solutions <span>Under One Roof</span></h2>
-                                <p>We provide reliable CNC, Industrial PC, Automation, and Electronics Repair solutions — all under one roof. From hard disk services to camera installation, drive repairs, and Industry 4.0 integration — we keep your operations running smoothly.</p>
-                                <Link href="/services" className="btn-two">Find Solutions
+                                <span className="subtitle-one">{d.subtitle}</span>
+                                <h2 dangerouslySetInnerHTML={{ __html: d.headline }} />
+                                <p>{d.description}</p>
+                                <Link href={d.buttonLink} className="btn-two">{d.buttonText}
                                     <i className="fas fa-arrow-right"></i>
                                 </Link>
                             </div>

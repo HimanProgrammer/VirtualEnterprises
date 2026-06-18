@@ -1,7 +1,12 @@
+"use client";
+import { useState, useEffect } from "react";
 import image1 from "../../../../public/assets/img/why-choose-us/why-choose.png";
 import image2 from "../../../../public/assets/img/shape/why-choose-shape.png";
+import { getSection, defaults } from "../../../../lib/cms";
 
 const ChooseUs = () => {
+    const [d, setD] = useState(defaults.chooseUs);
+    useEffect(() => { getSection("chooseUs").then(v => { if (v) setD({ ...defaults.chooseUs, ...v }); }); }, []);
     return (
         <>
         <div className="why-choose-us__one section-padding">
@@ -10,27 +15,27 @@ const ChooseUs = () => {
                     <div className="col-xl-6 col-lg-7 col-md-9">
                         <div className="why-choose-us__one-left">
                             <div className="why-choose-us__one-title ">
-                                <span className="subtitle-one">Why Choose Us</span>
-                                <h2>Your Trusted Industrial Technology Partner</h2>
-                                <p>We are committed to providing complete and reliable industrial and technology solutions to help your business stay ahead. With expertise in CNC machines, industrial PCs, electronics repair, and automation, we ensure seamless integration of technology into your operations. Our team delivers fast, customized, and high-quality services designed to meet your unique requirements. Whether it&apos;s Industry 4.0 solutions, IT automation, or system integration, we work as your trusted technology partner every step of the way.</p>
+                                <span className="subtitle-one">{d.subtitle}</span>
+                                <h2>{d.headline}</h2>
+                                <p>{d.description}</p>
                             </div>
                             <div className="why-choose-us__one-quality">
                                 <div className="why-choose-us__one-quality-single">
                                     <div className="icon">
-                                        <i className="flaticon-machine-repair"></i>
+                                        <i className={d.feature1Icon}></i>
                                     </div>
                                     <div className="why-choose-us__one-quality-single-content">
-                                        <h4>Expert Industrial Repair</h4>
-                                        <p>Fast, reliable repair of CNC hard disks, drives, control cards, servo motors, and HMI systems.</p>
+                                        <h4>{d.feature1Title}</h4>
+                                        <p>{d.feature1Text}</p>
                                     </div>
                                 </div>
                                 <div className="why-choose-us__one-quality-single">
                                     <div className="icon">
-                                        <i className="flaticon-web-research"></i>
+                                        <i className={d.feature2Icon}></i>
                                     </div>
                                     <div className="why-choose-us__one-quality-single-content">
-                                        <h4>Industry 4.0 Ready</h4>
-                                        <p>PLC programming, ERP integration, and IT automation to keep your operations future-ready.</p>
+                                        <h4>{d.feature2Title}</h4>
+                                        <p>{d.feature2Text}</p>
                                     </div>
                                 </div>
                             </div>

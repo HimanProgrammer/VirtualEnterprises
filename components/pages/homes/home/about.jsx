@@ -1,3 +1,4 @@
+"use client";
 import brand1 from "../../../../public/assets/img/brand/brand-1.png";
 import brand2 from "../../../../public/assets/img/brand/brand-2.png";
 import brand3 from "../../../../public/assets/img/brand/brand-3.png";
@@ -5,10 +6,14 @@ import brand4 from "../../../../public/assets/img/brand/brand-4.png";
 import brand5 from "../../../../public/assets/img/brand/brand-5.png";
 import about1 from "../../../../public/assets/img/about/about-1.png";
 import about2 from "../../../../public/assets/img/about/about-2.png";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Count from "../../common/count";
+import { getSection, defaults } from "../../../../lib/cms";
 
 const About = () => {
+    const [d, setD] = useState(defaults.about);
+    useEffect(() => { getSection("about").then(v => { if (v) setD({ ...defaults.about, ...v }); }); }, []);
     return (
         <>
         <div className="brand__area pt-115">
@@ -66,7 +71,7 @@ const About = () => {
                                 <i className="flaticon-consultant"></i>
                                 <div className="experience-bar-right">
                                     <div className="experience-bar-counter">
-                                        <h4 className="counter"><Count number={15}/></h4>
+                                        <h4 className="counter"><Count number={d.experienceYears || 15}/></h4>
                                         <span>+</span>
                                     </div>
                                     <span>Years Experience</span>
@@ -80,9 +85,9 @@ const About = () => {
                     </div>
                     <div className="col-xl-6 col-lg-7 col-md-9">
                         <div className="about__one-content p-3">
-                            <span className="subtitle-one">About us</span>
-                            <h2>Transform Your Business with Advanced IT Solutions  </h2>
-                            <p>We help businesses harness the power of technology to drive growth and efficiency. Our IT solutions cover everything from software development to automation and system integration — empowering industries to stay competitive in the digital age.</p>
+                            <span className="subtitle-one">{d.subtitle}</span>
+                            <h2>{d.headline}</h2>
+                            <p>{d.description}</p>
 
                             <Link href="/about" className="btn-one">Discover More<i className="fas fa-arrow-right"></i></Link>
                         </div>
