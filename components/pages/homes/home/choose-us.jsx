@@ -10,9 +10,9 @@ const ChooseUs = () => {
                     <div className="col-xl-6 col-lg-7 col-md-9">
                         <div className="why-choose-us__one-left">
                             <div className="why-choose-us__one-title ">
-                                <span className="subtitle-one">Why Chose Us</span>
-                                <h2>Tailored IT Strategies for Your Business</h2>
-                                <p>Craft personalized action plans harnessing the latest IT innovations to support your business objectives driving growth advantage</p>
+                                <span className="subtitle-one">Why Choose Us</span>
+                                <h2>Your Trusted Industrial Technology Partner</h2>
+                                <p>We are committed to providing complete and reliable industrial and technology solutions to help your business stay ahead. With expertise in CNC machines, industrial PCs, electronics repair, and automation, we ensure seamless integration of technology into your operations. Our team delivers fast, customized, and high-quality services designed to meet your unique requirements. Whether it&apos;s Industry 4.0 solutions, IT automation, or system integration, we work as your trusted technology partner every step of the way.</p>
                             </div>
                             <div className="why-choose-us__one-quality">
                                 <div className="why-choose-us__one-quality-single">
@@ -20,8 +20,8 @@ const ChooseUs = () => {
                                         <i className="flaticon-machine-repair"></i>
                                     </div>
                                     <div className="why-choose-us__one-quality-single-content">
-                                        <h4>Innovative Tech Leader</h4>
-                                        <p>Harness ingenuity and foresight, we consistently pioneer advanced solutions that set industry</p>
+                                        <h4>Expert Industrial Repair</h4>
+                                        <p>Fast, reliable repair of CNC hard disks, drives, control cards, servo motors, and HMI systems.</p>
                                     </div>
                                 </div>
                                 <div className="why-choose-us__one-quality-single">
@@ -29,8 +29,8 @@ const ChooseUs = () => {
                                         <i className="flaticon-web-research"></i>
                                     </div>
                                     <div className="why-choose-us__one-quality-single-content">
-                                        <h4>Reliable Global Support</h4>
-                                        <p>Day or night, our global support team stands ready, providing reliable assistance and technical</p>
+                                        <h4>Industry 4.0 Ready</h4>
+                                        <p>PLC programming, ERP integration, and IT automation to keep your operations future-ready.</p>
                                     </div>
                                 </div>
                             </div>
