@@ -1,5 +1,8 @@
 import { supabase } from '@/lib/supabase';
 
+// Allow dynamic rendering for this API route
+export const dynamic = 'force-dynamic';
+
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
   const section = searchParams.get('section');
